@@ -1,0 +1,26 @@
+{
+  "name": "leaflettest",
+  "version": "1.0.0",
+  "description": "leaflet maps demo",
+  "main": "mymap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nplayfair/leafletTest.git"
+  },
+  "keywords": [
+    "maps",
+    "leaflet"
+  ],
+  "author": "nplayfair",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nplayfair/leafletTest/issues"
+  },
+  "homepage": "https://github.com/nplayfair/leafletTest#readme",
+  "dependencies": {
+    "semantic-ui": "^2.3.3"
+  }
+}
