@@ -1,4 +1,6 @@
 #mapid {
   height: 400px;
   width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
