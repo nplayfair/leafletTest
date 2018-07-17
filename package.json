@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/nplayfair/leafletTest#readme",
   "dependencies": {
+    "hawk": "^7.0.7",
+    "hoek": "^5.0.3",
+    "request": "^2.87.0",
     "semantic-ui": "^2.3.3"
   }
 }
