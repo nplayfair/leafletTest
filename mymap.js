@@ -11,10 +11,13 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 var popup = L.popup();
 
 function onMapClick(e) {
-    popup
-        .setLatLng(e.latlng)
-        .setContent("You clicked the map at " + e.latlng.toString())
-        .openOn(mymap);
+    // popup
+    //     .setLatLng(e.latlng)
+    //     .setContent("You clicked the map at " + e.latlng.toString())
+    //     .openOn(mymap);
+
+    var latlongFormatted = e.latlng.lat.toFixed(4) + "," + e.latlng.lng.toFixed(4);
+    document.querySelector("#selectedLonglat").value = latlongFormatted;
 }
 
 mymap.on('click', onMapClick);
