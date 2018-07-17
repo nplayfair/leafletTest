@@ -1,6 +1,6 @@
-#Leaflet Map
+# Leaflet Map
 
-##Configuration
+## Configuration
 
 You need an API key from [MapBox](https://www.mapbox.com/studio/account/tokens/)
 
