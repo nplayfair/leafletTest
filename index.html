@@ -16,16 +16,20 @@
     <title>Leaflet Map</title>
   </head>
   <body>
-    <div class="ui raised container center aligned segment">
-      <h1 class="ui icon header">
-      <i class="map outline icon"></i>
-      Leaflet Map</h1>
-      <div class="ui column twelve wide">
+    <h1 class="ui center aligned icon header"><i class="map outline icon"></i>
+      Leaflet Map
+    </h1>
+    <div class="ui container">
+      <div class="ui segments">
         <div id="mapid"></div>
+        <div class="ui big fluid action input" id="location">
+          <input type="text" id="selectedLonglat"
+          placeholder="Longitude/Lat..">
+          <div class="ui violet button">Search</div>
+        </div>
+
       </div>
-      <div class="ui input" id="location">
-        <input type="text" id="selectedLonglat" placeholder="Longitude/Lat..">
-      </div>
+
 
     </div>
     <script type="text/javascript" src="config.js"></script>
