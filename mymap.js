@@ -1,4 +1,3 @@
-$(document).ready(function() {
   var myKey = config.MY_KEY;
   var mymap = L.map('mapid').setView([52.95, -1.15], 13);
 
@@ -8,6 +7,16 @@ $(document).ready(function() {
       id: 'mapbox.streets',
       accessToken: myKey
   }).addTo(mymap);
+
+  //import { GeoSearchControl, OpenStreetMapProvider } from 'leaflet-geosearch';
+  var GeoSearchControl = window.GeoSearch.GeoSearchControl;
+  var OpenStreetMapProvider = window.GeoSearch.OpenStreetMapProvider;
+
+  var provider = new OpenStreetMapProvider();
+  var searchControl = new GeoSearchControl({
+    provider: provider,
+    style: 'bar',
+  });
 
 
   //Add marker to map
@@ -20,6 +29,5 @@ $(document).ready(function() {
       var latlongFormatted = e.latlng.lat.toFixed(4) + "," + e.latlng.lng.toFixed(4);
       document.querySelector("#selectedLonglat").value = latlongFormatted;
   }
-
-  mymap.on('click', onMapClick);
-});
+  mymap.addControl(searchControl);
+  // mymap.on('click', onMapClick);
